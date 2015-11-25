@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'This is the home page.';
+});
+
+Route::get('/practice', function() {
+	echo App::environment();
 });
